@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* primary */
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    /* accent */
+    --blue: hsl(248, 32%, 49%);
+    /* neutral */
+    --dark-blue: hsl(249, 10%, 26%);
+    --grayish-blue: hsl(246, 25%, 77%);
+    --poppins-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--red);
+    background-image: url('images/bg-intro-desktop.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* flexbox used to align main content of page */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+h1 {
+    color: #fff;
+    font-family: var(--poppins-sans-serif);
+    font-weight: 600;
+    margin-top: 16.5rem;
+    margin-left: 4rem;
+}
+
+p {
+    color: rgb(230, 224, 224);
+    font-family: var(--poppins-sans-serif);
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 1.5rem;
+    margin-left: 4rem;
+}
+
+form {
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-flexbox;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px;
+    width: 450px;
+    margin: -1rem 3rem 0 1.5rem;
+    padding: 20px;
+}
+
+input {
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    border: 1px solid var(--grayish-blue);
+    font-size: 14px;
+    display: block;
+    font-weight: 500;
+    margin: 10px;
+    width: 100%;
+    padding: 15px 25px;
+    
+}
+
+input::placeholder {
+    color: var(--grayish-blue);
+    font-family: var(--poppins-sans-serif);
+    font-weight: 600;
+}
+
+.btn-blue span {
+    color: rgb(235, 227, 227);
+}
+
+span {
+    color: var(--red);
+}
+
+.terms {
+    color: var(--grayish-blue);
+    text-align: center;
+    margin-left: 30px;
+    margin-top: 4rem;
+}
+
+small {
+    color: var(--red);
+    font-family: var(--poppins-sans-serif);
+    font-weight: 400;
+   
+}
+
+/* button styling begins */
+
+.btn {
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: var(--poppins-sans-serif);
+    font-weight: 400;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    border-radius: 5px;
+    color: #fff;
+    width: 450px;
+    padding: 15px;
+    margin: 8rem 0 3rem 1rem;
+}
+
+
+input:focus {
+    border-color: var(--blue);
+    outline: none;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control img {
+    position: absolute;
+    top: 20%;
+    transform: translateX(-50%);
+    right: 10px;
+    opacity: 0;
+    height: 20px;
+}
+
+.form-control.error img {
+    opacity: 1;
+   
+}
+
+/* should show when user input isnt submitted correctly */
+.form-control.error input {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.form-control.error small {
+    color: var(--red);
+    position: absolute;
+    font-weight: 600;
+    bottom: -24px;
+    right: 0;
+    text-align: right;
+    opacity: 0;
+}
+
+.form-control.error input::placeholder {
+    color: var(--red);
+}
+
+
+.btn-green {
+    background-color: var(--green);
+    border: none;
+    color: white;
+    width: 400px;
+    padding: 15px;
+    margin: 0.5rem 0 1rem 0.5rem;
+}
+
+.btn-green:hover {
+    background-color: hsl(153, 70%, 74%);
+}
+
+@media (max-width: 560px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    h1 {
+        margin-top: 3rem;
+        margin-right: 3rem;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+        margin-right: 3rem;
+    }
+
+    form {
+        margin-left: 2rem;
+        margin-top:2rem;
+    }
+
+    .btn-blue {
+        margin: 4rem 0 0 2rem;
+    }
+}

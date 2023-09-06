@@ -206,14 +206,17 @@ input:focus {
         line-height: 36px;
         letter-spacing: -0.292px;
         margin-top: 3rem;
-        margin-right: 5rem;
+        position: relative;
+        right: 3rem;
         text-align: center;
         width: 327px;
     }
 
     p {
         text-align: center;
-        margin-right: 5rem;
+        position: relative;
+        right: 3rem;
+        margin-right: 2rem;
         line-height: 26px;
         width: 327px;
     }

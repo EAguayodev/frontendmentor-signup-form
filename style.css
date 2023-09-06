@@ -43,7 +43,7 @@ h1 {
     line-height: 55px;
     margin-top: 16.5rem;
     position: relative;
-    right: 3rem;
+    right: -2rem;
     width: 525px;
 }
 
@@ -130,7 +130,7 @@ small {
     height: 60px;
     width: 450px;
     padding: 15px;
-    margin: 8rem 0 3rem 1rem;
+    margin: 8rem 0 3rem 4rem;
 }
 
 

@@ -77,9 +77,9 @@ input {
     display: block;
     font-weight: 500;
     margin: 10px;
-    width: 100%;
+    width: 460px;
+    height: 56px;
     padding: 15px 25px;
-    
 }
 
 input::placeholder {
@@ -106,8 +106,8 @@ span {
 small {
     color: var(--red);
     font-family: var(--poppins-sans-serif);
-    font-weight: 400;
-   
+    font-weight: 500;
+    font-size: 11px;
 }
 
 /* button styling begins */
@@ -117,6 +117,7 @@ small {
     border-radius: 5px;
     font-family: var(--poppins-sans-serif);
     font-weight: 400;
+    font-style: normal;
 }
 
 .btn-blue {
@@ -153,7 +154,6 @@ input:focus {
 
 .form-control.error img {
     opacity: 1;
-   
 }
 
 /* should show when user input isnt submitted correctly */
@@ -165,7 +165,8 @@ input:focus {
 .form-control.error small {
     color: var(--red);
     position: absolute;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 500;
     bottom: -24px;
     right: 0;
     text-align: right;
@@ -182,6 +183,7 @@ input:focus {
     border: none;
     color: white;
     width: 400px;
+    height: 56px;
     padding: 15px;
     margin: 0.5rem 0 1rem 0.5rem;
 }
@@ -198,22 +200,48 @@ input:focus {
     }
 
     h1 {
+        font-size: 28px;
+        font-style: normal;
+        line-height: 36px;
+        letter-spacing: -0.292px;
         margin-top: 3rem;
         margin-right: 3rem;
         text-align: center;
+        width: 327px;
     }
 
     p {
         text-align: center;
         margin-right: 3rem;
+        line-height: 26px;
+        width: 327px;
+    }
+
+    input{
+        width: 279px;
+        height: 56px;
     }
 
     form {
+        width: 327px;
+        height: 442px;
         margin-left: 2rem;
         margin-top:2rem;
     }
 
     .btn-blue {
         margin: 4rem 0 0 2rem;
+        width: 327px;
+        height: 88px;
+    }
+
+    .btn-green{
+        width: 279px;
+        height: 56px;
+    }
+
+    small{
+        width: 249px;
+        line-height: 21px;
     }
 }

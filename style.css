@@ -207,7 +207,7 @@ input:focus {
         letter-spacing: -0.292px;
         margin-top: 3rem;
         position: relative;
-        right: 3rem;
+        right: 0rem;
         text-align: center;
         width: 327px;
     }
@@ -215,8 +215,7 @@ input:focus {
     p {
         text-align: center;
         position: relative;
-        right: 3rem;
-        margin-right: 2rem;
+        right: 0rem;
         line-height: 26px;
         width: 327px;
     }

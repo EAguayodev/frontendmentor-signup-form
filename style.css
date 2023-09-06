@@ -42,7 +42,8 @@ h1 {
     letter-spacing: -0.521px;
     line-height: 55px;
     margin-top: 16.5rem;
-    margin-left: 4rem;
+    position: relative;
+    right: 3rem;
     width: 525px;
 }
 
@@ -52,7 +53,7 @@ p {
     font-weight: 500;
     font-size: 16px;
     margin-top: 1.5rem;
-    margin-left: 4rem;
+    margin-left: 2rem;
     width: 525px;
 }
 

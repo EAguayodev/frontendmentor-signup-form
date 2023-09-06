@@ -205,14 +205,14 @@ input:focus {
         line-height: 36px;
         letter-spacing: -0.292px;
         margin-top: 3rem;
-        margin-right: 3rem;
+        margin-right: 5rem;
         text-align: center;
         width: 327px;
     }
 
     p {
         text-align: center;
-        margin-right: 3rem;
+        margin-right: 5rem;
         line-height: 26px;
         width: 327px;
     }
